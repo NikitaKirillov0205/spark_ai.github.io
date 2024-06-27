@@ -1,223 +1,485 @@
-body{
-    background-color: #151515;
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
+@media (max-width: 767px){
+    body{
+        background-color: #151515;
+        animation: fadeInAnimation ease 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
-    100% {
-        opacity: 1;
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .mark{
+        width: 98%;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: inline;
+        box-sizing: border-box;
+        padding-left: 75%;
+    }
+    
+    .header{
+        background-color: white;
+        width: 98%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1%;
+        border-radius: 15px;
+        justify-content: space-around;
+        align-items: center;
+    
+        /** font **/
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 25%;
+    }
+    .navigation{
+        display: none;
+        justify-content: space-around;
+        width: 30%;
+    }
+    
+    .nav-elem :hover{
+        letter-spacing: 2px;
+        color: lightgray;
+        transition: 0.3s;
+    }
+    .nav-elem :not(:hover){
+        transition: 0.3s;
+    }
+    
+    .headercontact{
+        display: grid;
+        align-items: center;
+        height: 40px;
+        width: 25%;
+        border: 2px solid #151515;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .headercontact :hover{
+        letter-spacing: 2px;
+        color: lightgray;
+        transition: 0.3s;
+    }
+    .headercontact :not(:hover){
+        transition: 0.3s;
+    }
+    
+    .i1{
+        width: 100%;
+    }
+    
+    .inscription{
+        display: grid;
+        color: white;
+        text-align: center;
+        height: 25vh;
+        align-items: center;
+        line-height: 40px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+    }
+    
+    
+    .about-image{
+        display: none;
+        width: 25%;
+        border-radius: 25px;
+    }
+    
+    .about-text{
+        width: 80%;
+    }
+    
+    .About{
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .application{
+        margin-top: 15%;
+        width: 98%;
+    }
+    
+    .application-text{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 5%
+    }
+    
+    .im-cont{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .mock-up-text{
+        display: none;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white; 
+        font-size: 45px;
+        line-height: 170%;
+    }
+    
+    .app-text{
+        margin-top: 10%;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white; 
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 25px;
+        display: block;
+    }
+    
+    .team-text{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    .team{
+        color: #151515;
+        margin-top: 10%;
+        display: block;
+        margin-bottom: 10%;
+        flex-wrap: wrap;
+    }
+    
+    .members{
+        display: flex;
+        justify-content: space-around;
+        width: 98%;
+        flex-wrap: wrap;
+    }
+    
+    .txt{
+        display: none;
+        margin-bottom: 10%;
+    }
+    .member{
+        color: #151515;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+    }
+    .member-pic{
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        margin-bottom: 25%;
+    }
+    
+    .footer{
+        color: white;
+        height: 250px;
+        margin: -10px;
+        box-sizing: border-box;
+        background: rgba(255,255,255,0.1);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(6px);
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-text{
+        width: 40%;
     }
 }
 
-.mark{
-    width: 98%;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: inline;
-    box-sizing: border-box;
-    padding-left: 75%;
-}
-
-.header{
-    background-color: white;
-    width: 98%;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1%;
-    border-radius: 15px;
-    justify-content: space-around;
-    align-items: center;
-
-    /** font **/
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 25%;
-}
-.navigation{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.nav-elem :hover{
-    letter-spacing: 2px;
-    color: lightgray;
-    transition: 0.3s;
-}
-.nav-elem :not(:hover){
-    transition: 0.3s;
-}
-
-.headercontact{
-    display: grid;
-    align-items: center;
-    height: 40px;
-    width: 25%;
-    border: 2px solid #151515;
-    text-align: center;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.headercontact :hover{
-    letter-spacing: 2px;
-    color: lightgray;
-    transition: 0.3s;
-}
-.headercontact :not(:hover){
-    transition: 0.3s;
-}
-
-.i1{
-    width: 100%;
-}
-
-.inscription{
-    display: grid;
-    color: white;
-    text-align: center;
-    height: 25vh;
-    align-items: center;
-    line-height: 40px;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-}
 
 
-.about-image{
-    width: 25%;
-    border-radius: 25px;
-}
 
-.about-text{
-    width: 40%;
-}
 
-.About{
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-around;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 25px;
-}
 
-.application{
-    margin-top: 15%;
-    width: 98%;
-}
 
-.application-text{
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    margin-bottom: 5%
-}
 
-.im-cont{
-    display: flex;
-    justify-content: space-around;
-}
 
-.mock-up-text{
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white; 
-    font-size: 45px;
-    line-height: 170%;
-}
 
-.app-text{
-    margin-top: 10%;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white; 
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 25px;
-    display: block;
-}
 
-.team-text{
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    margin-bottom: 5%;
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 767px){
+
+    body{
+        background-color: #151515;
+        animation: fadeInAnimation ease 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .mark{
+        width: 98%;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: inline;
+        box-sizing: border-box;
+        padding-left: 75%;
+    }
+    
+    .header{
+        background-color: white;
+        width: 98%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1%;
+        border-radius: 15px;
+        justify-content: space-around;
+        align-items: center;
+    
+        /** font **/
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 25%;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+    
+    .nav-elem :hover{
+        letter-spacing: 2px;
+        color: lightgray;
+        transition: 0.3s;
+    }
+    .nav-elem :not(:hover){
+        transition: 0.3s;
+    }
+    
+    .headercontact{
+        display: grid;
+        align-items: center;
+        height: 40px;
+        width: 25%;
+        border: 2px solid #151515;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .headercontact :hover{
+        letter-spacing: 2px;
+        color: lightgray;
+        transition: 0.3s;
+    }
+    .headercontact :not(:hover){
+        transition: 0.3s;
+    }
+    
+    .i1{
+        width: 100%;
+    }
+    
+    .inscription{
+        display: grid;
+        color: white;
+        text-align: center;
+        height: 25vh;
+        align-items: center;
+        line-height: 40px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+    }
+    
+    
+    .about-image{
+        width: 25%;
+        border-radius: 25px;
+    }
+    
+    .about-text{
+        width: 40%;
+    }
+    
+    .About{
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .application{
+        margin-top: 15%;
+        width: 98%;
+    }
+    
+    .application-text{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 5%
+    }
+    
+    .im-cont{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .mock-up-text{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white; 
+        font-size: 45px;
+        line-height: 170%;
+    }
+    
+    .app-text{
+        margin-top: 10%;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white; 
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 25px;
+        display: block;
+    }
+    
+    .team-text{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    .team{
+        margin-top: 10%;
+        display: block;
+        height: 80vh;
+        margin-bottom: 10%;
+    }
+    
+    .members{
+        display: flex;
+        justify-content: space-around;
+        width: 98%;
+    }
+    
+    .member{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+    }
+    .member-pic{
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        margin-bottom: 25%;
+    }
+    
+    .footer{
+        color: white;
+        height: 250px;
+        margin: -10px;
+        box-sizing: border-box;
+        background: rgba(255,255,255,0.1);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(6px);
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-text{
+        width: 40%;
+    }
+
     
 }
-.team{
-    margin-top: 10%;
-    display: block;
-    height: 80vh;
-    margin-bottom: 10%;
-}
 
-.members{
-    display: flex;
-    justify-content: space-around;
-    width: 98%;
-}
 
-.member{
-    width: 25%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-}
-.member-pic{
-    height: 200px;
-    width: 200px;
-    border-radius: 100%;
-    margin-bottom: 25%;
-}
-
-.footer{
-    color: white;
-    height: 250px;
-    margin: -10px;
-    box-sizing: border-box;
-    background: rgba(255,255,255,0.1);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(6px);
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-.footer-text{
-    width: 40%;
-}
