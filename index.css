@@ -5,7 +5,12 @@
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
-    
+    .footer-text1{
+        display: none;
+    }
+    .typing{
+        font-size: 40px;
+    }
     a{
         text-decoration: none;
         color: black;
@@ -48,7 +53,7 @@
         font-style: normal;
     }
     .logo{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: space-between;
         width: 25%;
@@ -207,8 +212,8 @@
         font-size: 25px;
     }
     .member-pic{
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
         border-radius: 100%;
         margin-bottom: 25%;
     }
@@ -285,7 +290,9 @@
         box-sizing: border-box;
         padding-left: 75%;
     }
-    
+    .typing{
+        font-size: 80px;
+    }
     .header{
         background-color: white;
         width: 98%;
@@ -478,7 +485,9 @@
     .footer-text{
         width: 40%;
     }
-
+    .footer-text1{
+        width: 40%;
+    }
     
 }
 
